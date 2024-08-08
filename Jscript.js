@@ -44,12 +44,15 @@ document.addEventListener('DOMContentLoaded',function(){
               "<div class=\"card-body\">"+
                 "<h3 class=\"card-title\">"+item.name+"</h3>"+
                 "<p class=\"card-text\">"+item.p+"</p>"+
-                "<a href=\""+item.href+"\" class=\"btn btn-primary\"> Ver Más</a>"+
+                "<button type='button' class='btn btn-success' onclick=\"window.location.href='" + item.href + "'\">Ver Más</button>"+
               "</div>"+
             "</div> </div>"
         });
 
-     /*SEMANAS.forEach(item =>{
+     /*
+     Forma cavernícolamente larga:
+     
+     SEMANAS.forEach(item =>{
         const col = document.createElement('div');
         col.className="col";
 
@@ -88,18 +91,3 @@ document.addEventListener('DOMContentLoaded',function(){
         document.getElementById('weekcards').appendChild(col);*/
 
     })
-/*
-<div class="col">
-            <!--primer card-->
-            <div class="card" style="width: 18rem;">
-              <img src="./imagenes/card1.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h3 class="card-title">Semana 1</h3>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <!--fin card-->
-
-          </div>
-          */
