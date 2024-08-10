@@ -14,9 +14,18 @@ fieldset {
         border-radius: 8px;
         background-color: #ddf4eb;
     }
+.campoTexto{
+    text-align: center;
+    text-align-last: center;
+}
+
     legend {
         font-weight: bold;
         color: #000000;
+        text-decoration: underline green dotted;
+        text-shadow: 2px 2px 2px green;
+       
+        
     }
 
     .presentation {

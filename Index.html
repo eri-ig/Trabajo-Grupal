@@ -39,17 +39,27 @@
     </div>
   </nav>
   <!--Fin del NavBar-->
-  <div id="resultadosBusqueda" class="resultado"></div>
+<br><br><br>
+ 
+ <!--espacio de resultados de la busqueda-->
+ <div id="resultadosBusqueda" class="resultado"></div>
+ <!--Fin de resultados de la busqueda-->
 
+<!--Imagen del principio-->
   <div id="landscape"></div>
+<!--Fin del Imagen del principio-->
 
+
+<!--Tarjetas-->
   <div class="container text-center " style="padding: 40px;">
     <div class="row" id="weekcards">
     </div>
   </div>
+<!--Fin de Tarjetas-->
 
-
-  <fieldset>
+<!--Inicio del resumen-->
+<div class="container">
+  <fieldset class="campoTexto">
     <legend id="sem1">Semana 1</legend>
     <p>Para entender el desarrollo web, primero debemos diferenciarlo del diseño web, aunque ambos términos a menudo se
       confunden. El diseño web se refiere a la apariencia y la percepción del sitio web, abarcando elementos como el
@@ -82,107 +92,118 @@
       estructurar, estilizar y añadir funcionalidad a las páginas web.</p>
   </fieldset>
 
+</div>
+ 
 
   <br>
-  <fieldset>
-    <legend id="sem2">Semana 2 </legend>
-    <p>En una página web es fundamentalmente un documento de texto con marcas o etiquetas que permiten modificar su
-      presentación, incluir elementos multimedia, crear hiperenlaces y añadir significado al texto. Estas etiquetas se
-      escriben entre desigualdades (como
-      <code>&lt;p&gt;</code>,
-      <code>&lt;h1&gt;</code>,<code>&lt;div&gt;</code>) y suelen ir por parejas, con una etiqueta de apertura y una de
-      cierre. Algunas etiquetas, conocidas
-      como marcas vacías (como <code>&lt;img&gt;</code>, <code>&lt;br&gt;</code>,
-      <code>&lt;hr&gt;</code>), no requieren una etiqueta de cierre. Los navegadores web interpretan estas etiquetas y
-      presentan el
-      documento según el diseño del autor, ignorando en general los saltos de línea, espacios en blanco y tabuladores,
-      excepto en la etiqueta
-      <code>&lt;pre&gt;</code>.<br><br>
-
-      Es una buena práctica no utilizar etiquetas HTML para modificar el aspecto visual del contenido, sino delegar este
-      trabajo a las hojas de estilo (CSS). Las etiquetas pueden anidarse, pero no de cualquier manera; algunas pueden
-      estar contenidas por otras, pero no se pueden insertar en cualquier orden. Los atributos dentro de las etiquetas
-      permiten especificar características adicionales y pueden tener valores. Por ejemplo, el atributo "id" debe ser
-      único en toda la página, mientras que el atributo "class" permite definir clases de elementos que se pueden
-      referenciar en las hojas de estilo.<br><br>
-
-      Un documento HTML está estructurado en dos partes principales: la cabecera (
-
-      <code>&lt;head&gt;</code>) y el cuerpo (
-
-      <code>&lt;body&gt;</code>). La cabecera contiene información de control e identificación, como el título de la
-      página y enlaces a
-      hojas de estilo o scripts, mientras que el cuerpo contiene el contenido visible en el navegador. La primera
-      etiqueta del documento,
-      <!DOCTYPE>, define el tipo de documento y su versión, siendo "html" la correspondiente a HTML5. Las etiquetas
-      básicas incluyen <code>&lt;html&gt;</code> para englobar todo el documento, <code>&lt;head&gt;</code> para la
-      cabecera y
-      <code>&lt;body&gt;</code> para el contenido principal.<br><br>
-
-      En cuanto a formularios, que permiten la interacción del usuario con el servidor, se delimitan con la etiqueta
-      <code>&lt;form&gt;</code>. Los atributos más importantes de esta etiqueta son "action", que especifica el agente
-      que procesará
-      los datos enviados, y "method", que define cómo se enviarán los datos (get o post). Los controles dentro de
-      los formularios, como <code>&lt;imput&gt;</code>, <code>&lt;button&gt;</code>,<code>&lt;select&gt;</code>,
-      <code>&lt;textarea&gt;</code>, permiten al usuario introducir datos. Cada tipo de control tiene atributos
-      específicos, como "type" para definir el tipo de dato (texto, número, contraseña), "name" para identificar el
-      control, y "value" para establecer su valor inicial.
-    </p>
-  </fieldset>
-
-  <br>
-  <fieldset>
-    <legend id="sem3">Semana 3</legend>
-    <p>CSS (Hojas de Estilo en Cascada) es una tecnología que permite separar el contenido de una página web del diseño
-      visual. En lugar de incluir tanto el contenido como el formato en el HTML, CSS permite definir el estilo de
-      presentación en archivos separados. Esto facilita la creación de diseños consistentes y su modificación en un solo
-      lugar, lo que es especialmente útil cuando se aplican estilos a múltiples páginas web.<br><br>
-
-      Los estilos en CSS se pueden aplicar de tres maneras: usando el atributo &lt;style&gt; directamente en el HTML,
-      con la etiqueta &lt;style&gt; dentro del HTML, o mediante una hoja de estilos externa vinculada con &lt;link&gt;.
-      Las hojas de estilo externas son las más recomendables para mantener un diseño coherente en múltiples páginas, ya
-      que cualquier cambio en la hoja de estilo se refleja en todas las páginas que la utilizan.<br><br>
-
-      Los selectores en CSS permiten especificar qué elementos deben recibir un estilo particular. Estos incluyen
-      selectores de tipo (&lt;E&gt;), clase (&lt;.nombre_clase&gt;), identificador (&lt;#nombre-id&gt;), y combinaciones
-      de elementos como descendientes (&lt;E&gt; &lt;F&gt;), hijos (&lt;E&gt; &gt; &lt;F&gt;), y elementos consecutivos
-      (&lt;E&gt; + &lt;F&gt;). Cada tipo de selector tiene su uso específico y puede combinarse para aplicar estilos de
-      manera precisa.<br><br>
-
-      La aplicación de estilos en CSS sigue unas reglas de precedencia: los estilos en línea tienen mayor prioridad
-      sobre los internos y externos, mientras que los estilos en hojas externas tienen la menor prioridad. Además, el
-      navegador aplica las propiedades de mayor especificidad en caso de conflicto. Esto permite un control detallado
-      sobre cómo se presentan los elementos en una página web.</p>
-  </fieldset>
-
+  <div class="container">
+    <fieldset class="campoTexto">
+      <legend id="sem2">Semana 2 </legend>
+      <p>En una página web es fundamentalmente un documento de texto con marcas o etiquetas que permiten modificar su
+        presentación, incluir elementos multimedia, crear hiperenlaces y añadir significado al texto. Estas etiquetas se
+        escriben entre desigualdades (como
+        <code>&lt;p&gt;</code>,
+        <code>&lt;h1&gt;</code>,<code>&lt;div&gt;</code>) y suelen ir por parejas, con una etiqueta de apertura y una de
+        cierre. Algunas etiquetas, conocidas
+        como marcas vacías (como <code>&lt;img&gt;</code>, <code>&lt;br&gt;</code>,
+        <code>&lt;hr&gt;</code>), no requieren una etiqueta de cierre. Los navegadores web interpretan estas etiquetas y
+        presentan el
+        documento según el diseño del autor, ignorando en general los saltos de línea, espacios en blanco y tabuladores,
+        excepto en la etiqueta
+        <code>&lt;pre&gt;</code>.<br><br>
+  
+        Es una buena práctica no utilizar etiquetas HTML para modificar el aspecto visual del contenido, sino delegar este
+        trabajo a las hojas de estilo (CSS). Las etiquetas pueden anidarse, pero no de cualquier manera; algunas pueden
+        estar contenidas por otras, pero no se pueden insertar en cualquier orden. Los atributos dentro de las etiquetas
+        permiten especificar características adicionales y pueden tener valores. Por ejemplo, el atributo "id" debe ser
+        único en toda la página, mientras que el atributo "class" permite definir clases de elementos que se pueden
+        referenciar en las hojas de estilo.<br><br>
+  
+        Un documento HTML está estructurado en dos partes principales: la cabecera (
+  
+        <code>&lt;head&gt;</code>) y el cuerpo (
+  
+        <code>&lt;body&gt;</code>). La cabecera contiene información de control e identificación, como el título de la
+        página y enlaces a
+        hojas de estilo o scripts, mientras que el cuerpo contiene el contenido visible en el navegador. La primera
+        etiqueta del documento,
+        <!DOCTYPE>, define el tipo de documento y su versión, siendo "html" la correspondiente a HTML5. Las etiquetas
+        básicas incluyen <code>&lt;html&gt;</code> para englobar todo el documento, <code>&lt;head&gt;</code> para la
+        cabecera y
+        <code>&lt;body&gt;</code> para el contenido principal.<br><br>
+  
+        En cuanto a formularios, que permiten la interacción del usuario con el servidor, se delimitan con la etiqueta
+        <code>&lt;form&gt;</code>. Los atributos más importantes de esta etiqueta son "action", que especifica el agente
+        que procesará
+        los datos enviados, y "method", que define cómo se enviarán los datos (get o post). Los controles dentro de
+        los formularios, como <code>&lt;imput&gt;</code>, <code>&lt;button&gt;</code>,<code>&lt;select&gt;</code>,
+        <code>&lt;textarea&gt;</code>, permiten al usuario introducir datos. Cada tipo de control tiene atributos
+        específicos, como "type" para definir el tipo de dato (texto, número, contraseña), "name" para identificar el
+        control, y "value" para establecer su valor inicial.
+      </p>
+    </fieldset>
+  </div>
+  
 
   <br>
-  <fieldset>
-    <legend id="sem4">Semana 4</legend>
-    <p>En este módulo se revisa cómo incluir JavaScript en una página web. El código JavaScript puede ser incluido
-      directamente en la etiqueta &lt;script&gt; del HTML, que se ejecuta automáticamente al procesar la etiqueta.
-      Alternativamente, se puede utilizar un archivo externo vinculado a través del atributo src de &lt;script&gt;,
-      facilitando la organización y mantenimiento del código. El archivo puede estar en una ruta absoluta, relativa, o
-      en una URL externa.<br><br>
+  <div class="container">
+    <fieldset class="campoTexto">
+      <legend id="sem3">Semana 3</legend>
+      <p>CSS (Hojas de Estilo en Cascada) es una tecnología que permite separar el contenido de una página web del diseño
+        visual. En lugar de incluir tanto el contenido como el formato en el HTML, CSS permite definir el estilo de
+        presentación en archivos separados. Esto facilita la creación de diseños consistentes y su modificación en un solo
+        lugar, lo que es especialmente útil cuando se aplican estilos a múltiples páginas web.<br><br>
+  
+        Los estilos en CSS se pueden aplicar de tres maneras: usando el atributo &lt;style&gt; directamente en el HTML,
+        con la etiqueta &lt;style&gt; dentro del HTML, o mediante una hoja de estilos externa vinculada con &lt;link&gt;.
+        Las hojas de estilo externas son las más recomendables para mantener un diseño coherente en múltiples páginas, ya
+        que cualquier cambio en la hoja de estilo se refleja en todas las páginas que la utilizan.<br><br>
+  
+        Los selectores en CSS permiten especificar qué elementos deben recibir un estilo particular. Estos incluyen
+        selectores de tipo (&lt;E&gt;), clase (&lt;.nombre_clase&gt;), identificador (&lt;#nombre-id&gt;), y combinaciones
+        de elementos como descendientes (&lt;E&gt; &lt;F&gt;), hijos (&lt;E&gt; &gt; &lt;F&gt;), y elementos consecutivos
+        (&lt;E&gt; + &lt;F&gt;). Cada tipo de selector tiene su uso específico y puede combinarse para aplicar estilos de
+        manera precisa.<br><br>
+  
+        La aplicación de estilos en CSS sigue unas reglas de precedencia: los estilos en línea tienen mayor prioridad
+        sobre los internos y externos, mientras que los estilos en hojas externas tienen la menor prioridad. Además, el
+        navegador aplica las propiedades de mayor especificidad en caso de conflicto. Esto permite un control detallado
+        sobre cómo se presentan los elementos en una página web.</p>
+    </fieldset>
+  </div>
+  
 
-       La ubicación de la etiqueta &lt;script&gt; dentro del HTML también afecta el rendimiento, y
-      puede colocarse en el &lt;head&gt; o &lt;body&gt; del documento. JavaScript permite escribir sentencias, que se
-      separan con puntos y comas, y agregar comentarios para documentar el código. Las funciones en JavaScript ayudan a
-      evitar la duplicación de código y se pueden definir para realizar tareas específicas. Los parámetros pueden ser
-      pasados a las funciones para personalizar su comportamiento.<br><br>
-      
-      Además, JavaScript usa el DOM (Document Object Model)
-      para manipular elementos HTML, permitiendo la creación, modificación y eliminación de nodos. Los comentarios son
-      útiles para explicar el código y no afectan su ejecución. JSON es un formato de datos basado en texto que puede
-      ser utilizado para transmitir información y es convertido entre texto y objetos JavaScript mediante los métodos
-      JSON.parse() y JSON.stringify().<br><br>
 
-       Finalmente, HTTP es el protocolo que permite la comunicación entre clientes y
-      servidores, con métodos como GET y POST para realizar solicitudes y enviar datos. AJAX permite realizar pedidos al
-      servidor de forma asíncrona sin refrescar la página, utilizando la función fetch() para manejar las respuestas</p>
-  </fieldset><br><br>
+  <br>
+  <div class="container">
+    <fieldset class="campoTexto">
+      <legend id="sem4">Semana 4</legend>
+      <p>En este módulo se revisa cómo incluir JavaScript en una página web. El código JavaScript puede ser incluido
+        directamente en la etiqueta &lt;script&gt; del HTML, que se ejecuta automáticamente al procesar la etiqueta.
+        Alternativamente, se puede utilizar un archivo externo vinculado a través del atributo src de &lt;script&gt;,
+        facilitando la organización y mantenimiento del código. El archivo puede estar en una ruta absoluta, relativa, o
+        en una URL externa.<br><br>
+  
+         La ubicación de la etiqueta &lt;script&gt; dentro del HTML también afecta el rendimiento, y
+        puede colocarse en el &lt;head&gt; o &lt;body&gt; del documento. JavaScript permite escribir sentencias, que se
+        separan con puntos y comas, y agregar comentarios para documentar el código. Las funciones en JavaScript ayudan a
+        evitar la duplicación de código y se pueden definir para realizar tareas específicas. Los parámetros pueden ser
+        pasados a las funciones para personalizar su comportamiento.<br><br>
+        
+        Además, JavaScript usa el DOM (Document Object Model)
+        para manipular elementos HTML, permitiendo la creación, modificación y eliminación de nodos. Los comentarios son
+        útiles para explicar el código y no afectan su ejecución. JSON es un formato de datos basado en texto que puede
+        ser utilizado para transmitir información y es convertido entre texto y objetos JavaScript mediante los métodos
+        JSON.parse() y JSON.stringify().<br><br>
+  
+         Finalmente, HTTP es el protocolo que permite la comunicación entre clientes y
+        servidores, con métodos como GET y POST para realizar solicitudes y enviar datos. AJAX permite realizar pedidos al
+        servidor de forma asíncrona sin refrescar la página, utilizando la función fetch() para manejar las respuestas</p>
+    </fieldset>
+  </div>
+  <br><br>
 
-
+<!--Fin del resumen-->
 
   <div class="presentation" id="nosotras">
     <h3>NOSOTRAS:</h3>
@@ -197,7 +218,6 @@
         <a href="">Alison Gonzalez</a>
       </li>
     </ul>
-    
 </div>
 
     <!-- Footer para el final de la pagina -->
@@ -206,6 +226,7 @@
           <p>&copy; Jovenes a Programar 2024 - Erika Igarza, Catherine González y Alison Gonzalez.</p>
       </div>
   </footer>
+
 
 
 
