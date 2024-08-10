@@ -1,8 +1,10 @@
 #landscape{
         width: 100%; 
         height: 500px; 
-        background-image: url('./imagenes/start.jpg');
-        background-repeat: repeat; 
+        background-image: url('./imagenes/start.PNG');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 100px;
 }
 
 
