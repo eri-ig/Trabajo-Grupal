@@ -1,5 +1,10 @@
 body {
-    font-family: "Poppins", sans-serif !important;
+    font-family: "Poppins", sans-serif;
+    background-color: #DDF4EB;
+}   
+
+.barramenu{
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 #landscape {
@@ -16,22 +21,30 @@ body {
     padding: 40px;
 }
 
-.container-dark {
+/*.container-dark {
     padding-left: 60px;
     padding-right: 60px;
     margin: 80px;
     background-color: #ddf4eb;
-}
+}*/
 
 .container-light{
     padding-left: 60px;
     padding-right: 60px;
-    margin: 80px;
-    background-color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+    
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #5BE5A9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
 
 }
 
-.container{
+.text-center{
     text-align: center;
 }
 
@@ -42,12 +55,45 @@ legend {
     text-shadow: 2px 2px 2px green;
     text-align: center;
 }
-
-.presentation {
-    background-color: #a5ead1;
+/* CLASES DEL FOOTER*/
+.footer-contenedor {
+    background-color: rgba(255, 255, 255, 0.70);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flex-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-top: 16px;
+}
+
+.footer-title {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+hr{
+    color: #5BE5A9;
+    border-width: 2px;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.display-icons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 20px;
+}
+
+.display-icons img{
+    width: 30px;
 }
 
 .presentation h1 {
@@ -70,4 +116,72 @@ legend {
 
 .presentation a:hover {
     text-decoration: underline;
+}
+
+.resumen {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: white;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-weight: 600;
+    letter-spacing: .5ch;
+}
+
+.img-container {
+    position: relative;
+    background-color: greenyellow;
+}
+
+.semana-img {
+    height: 256px;
+    object-fit: contain;
+    width: 100%;
+    background-color: #D4F6E4;
+}
+
+.card:hover{
+    outline: 2px solid #5BE5A9;
+}
+
+.card:hover .card-body {
+    overflow: visible;
+    height: auto;
+}
+
+.card:hover .parrafo {
+    visibility: visible;
+}
+
+.card-body {
+    height: 110px;
+    overflow: hidden;
+}
+
+.subtitulo {
+    text-decoration-line: underline;
+    color: #2274A5;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.parrafo {
+    margin-top: 24px;
+    text-align: left;
+    visibility: hidden;
+}
+
+.tag {
+    background-color: #2274A5;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+#busqueda {
+    background-color: #DDF4EB;
+    color: black;
 }
